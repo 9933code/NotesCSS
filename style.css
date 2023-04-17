@@ -219,3 +219,26 @@ details {
     color: #ffeba7;
     box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
 }
+
+button[title] {
+  position: relative;
+}
+
+button[title]::after {
+  content: attr(title);
+  position: absolute;
+  /* right: 100%; */
+  width:300px;
+  transform: translate(-50%,-110%);
+  padding: 5px;
+  background-color: #333333a1;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+button[title]:hover::after {
+  opacity: 1;
+}
