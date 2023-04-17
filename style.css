@@ -34,7 +34,6 @@ h1 {
     margin: 5px;
     border-bottom: 2px solid transparent;
     transition: 0.5s;
-
 }
 
 .form-group:hover {
@@ -105,13 +104,12 @@ button:hover {
     background-color: #3e8e41;
 }
 
-
 .switch {
-    display: inline-block;
+    display: block;
     position: relative;
-    width: 180px;
+    width: 285px;
     height: 35px;
-    margin: 0px 10px;
+    /* margin: 0px 10px; */
 }
 
 .switch input {
@@ -148,29 +146,22 @@ button:hover {
     color: #fff;
 }
 
-/* .switch .slider {
-position: absolute;
-top: 0;
-left: 0;
-width: 50%;
-height: 100%;
-background-color: #ccc;
-border-radius: 4px;
-transition: all 0.3s ease;
+
+.sideOp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: #00800030;
+    padding: 5px;
 }
 
-.switch input:checked + .slider {
-left: 50%;
-background-color: #2196F3;
-} */
-
-
-
-
-
-
-
-
+details {
+    background: #4caf4f82;
+    margin: 2px;
+    padding: 2px;
+    min-width: 300px;
+}
 
 @media only screen and (min-width: 481px) and (max-width:768px) {
     form {
